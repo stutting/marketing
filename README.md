@@ -1,0 +1,2 @@
+# marketing
+Marketing AI training
