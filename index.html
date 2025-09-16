@@ -4,17 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daddy Daughter Trapping</title>
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 <body class="bg-stone-50 text-stone-800 font-serif">
-  <!-- Header -->
+  <!-- Header / Hero -->
   <header class="relative">
-    <img src="images/hero.png" alt="Daddy Daughter Trapping Hero" class="w-full h-[60vh] object-cover">
-    <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center text-white">
-      <h1 class="text-5xl font-bold drop-shadow-md">Daddy Daughter Trapping</h1>
-      <p class="mt-4 text-xl">Heritage skills in trapping, tanning, and sewing furs</p>
-      <nav class="mt-6 flex gap-6 text-lg">
+    <img src="images/hero.png" alt="Father and daughter by campfire along a river with mountains" class="w-full h-[60vh] object-cover">
+    <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center text-white px-4">
+      <img src="images/logo.png" alt="Daddy Daughter Trapping logo" class="w-24 h-24 object-contain mb-4 hidden sm:block" loading="lazy" decoding="async">
+      <h1 class="text-4xl sm:text-5xl font-bold drop-shadow-md">Daddy Daughter Trapping</h1>
+      <p class="mt-4 text-lg sm:text-xl max-w-3xl">Heritage skills in trapping, tanning, and sewing furs.</p>
+      <nav class="mt-6 flex flex-wrap items-center justify-center gap-6 text-lg">
         <a href="#products" class="hover:text-amber-300">Products</a>
         <a href="#story" class="hover:text-amber-300">Our Story</a>
         <a href="#training" class="hover:text-amber-300">Training</a>
@@ -24,83 +27,104 @@
   </header>
 
   <!-- Products -->
-  <section id="products" class="max-w-5xl mx-auto py-16 px-6">
-    <h2 class="text-3xl font-bold text-center mb-8">Products</h2>
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-      <img src="images/trapcover.png" alt="DP Coon Trap Cover" class="rounded shadow">
+  <section id="products" class="max-w-6xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-4">Products</h2>
+    <p class="text-center text-stone-600 max-w-2xl mx-auto mb-10">
+      Tools and artwork inspired by the fur trade era. Swap in real product photos anytime—layout stays polished.
+    </p>
+
+    <!-- Feature row -->
+    <div class="grid md:grid-cols-2 gap-10 items-center mb-14">
+      <img src="images/trapcover.png" alt="DP coon trap cover illustration showing dry bait chamber and scent well" class="rounded-xl shadow-lg w-full h-80 object-contain bg-white p-4" loading="lazy" decoding="async">
       <div>
         <h3 class="text-2xl font-semibold mb-2">DP Coon Trap Cover</h3>
-        <p class="mb-4">Keep your bait dry and effective with our trap cover. Includes a chamber for scent or lure to maximize results.</p>
+        <p class="mb-4 leading-relaxed">Keep your bait dry and effective. Integrated chamber holds lure or scent to improve results in wet or snowy conditions.</p>
         <a href="#contact" class="inline-block bg-amber-700 text-white px-6 py-2 rounded hover:bg-amber-800">Order Now</a>
       </div>
     </div>
-    <div class="mt-12 text-center">
-      <p class="mt-2 italic">“Keep your lure longer”</p>
-      <img src="images/product4.png" alt="EggCover" class="mx-auto w-64 rounded shadow">
-      <p class="mt-2 italic">“Keep more coon!”</p>
-      <img src="images/eggs.png" alt="Coons Love Eggs Illustration" class="mx-auto w-64 rounded shadow">
-      <p class="mt-2 italic">“Coons love eggs...”</p>
-      <div class="mt-12 text-center">
-      <img src="images/product3.png" alt="EggCover" class="mx-auto w-64 rounded shadow">
-      <p class="mt-2 italic">“Keep your bait dry!”</p>
-      <img src="images/product2.png" alt="EggCover" class="mx-auto w-64 rounded shadow">
-      <p class="mt-2 italic">“Keep your lure longer”</p>
-        <img src="images/product1.png" alt="EggCover" class="mx-auto w-64 rounded shadow">
-      <p class="mt-2 italic">“Keep more coon!”</p>
-    </div>
+
+    <!-- Gallery grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <figure class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
+        <img src="images/product4.png" alt="Egg-shaped cover product photo" class="w-full h-56 object-contain mb-3" loading="lazy" decoding="async">
+        <figcaption class="text-center italic text-stone-700">“Keep your lure longer.”</figcaption>
+      </figure>
+      <!-- Card 2 -->
+      <figure class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
+        <img src="images/eggs.png" alt="Playful sepia illustration themed around eggs" class="w-full h-56 object-contain mb-3" loading="lazy" decoding="async">
+        <figcaption class="text-center italic text-stone-700">“Coons love eggs...”</figcaption>
+      </figure>
+      <!-- Card 3 -->
+      <figure class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
+        <img src="images/product3.png" alt="Product angle close-up" class="w-full h-56 object-contain mb-3" loading="lazy" decoding="async">
+        <figcaption class="text-center italic text-stone-700">“Keep your bait dry!”</figcaption>
+      </figure>
+      <!-- Card 4 -->
+      <figure class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
+        <img src="images/product2.png" alt="Product detail showing chamber area" class="w-full h-56 object-contain mb-3" loading="lazy" decoding="async">
+        <figcaption class="text-center italic text-stone-700">“Longer-lasting scent.”</figcaption>
+      </figure>
+      <!-- Card 5 -->
+      <figure class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
+        <img src="images/product1.png" alt="Product demonstration photo" class="w-full h-56 object-contain mb-3" loading="lazy" decoding="async">
+        <figcaption class="text-center italic text-stone-700">“More consistent sets.”</figcaption>
+      </figure>
+      <!-- Card 6 (optional future item) -->
+      <figure class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
+        <img src="images/product5.png" alt="Future product placeholder" class="w-full h-56 object-contain mb-3" loading="lazy" decoding="async">
+        <figcaption class="text-center text-stone-400 italic">More heritage gear coming soon</figcaption>
+      </figure>
     </div>
   </section>
 
   <!-- Our Story -->
   <section id="story" class="bg-stone-100 py-16 px-6">
-    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-      <img src="images/camp.png" alt="Camp Scene" class="rounded shadow">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <img src="images/camp.png" alt="Frontier camp with tent, fire, and tanning frames" class="rounded-xl shadow-lg w-full h-80 object-contain bg-white p-4" loading="lazy" decoding="async">
       <div>
         <h2 class="text-3xl font-bold mb-4">Our Story</h2>
-        <p class="mb-4">We’re a father–daughter duo passionate about heritage trapping and fur craft. What began as a love for history has grown into a mission to preserve and share these skills.</p>
-        <p>From trapping and tanning to sewing, every step reflects our respect for tradition and our bond as family.</p>
+        <p class="mb-4 leading-relaxed">We’re a father–daughter team preserving the traditions of trapping, tanning, and fur craft. What started as a love of history became a mission to keep these skills alive.</p>
+        <p class="leading-relaxed">From careful sets to hand-stitched hides, every step reflects respect for the land, the craft, and the time spent together learning it.</p>
       </div>
     </div>
   </section>
 
   <!-- Training -->
-  <section id="training" class="max-w-5xl mx-auto py-16 px-6">
+  <section id="training" class="max-w-6xl mx-auto py-16 px-6">
     <h2 class="text-3xl font-bold text-center mb-8">Training</h2>
     <div class="grid md:grid-cols-2 gap-10 items-center">
-      <img src="images/map.png" alt="Training Map" class="rounded shadow">
+      <img src="images/map.png" alt="Hand-drawn map with compass rose and lantern" class="rounded-xl shadow-lg w-full h-80 object-contain bg-white p-4" loading="lazy" decoding="async">
       <div>
-        <p class="mb-4">Join our workshops to learn the fundamentals of trapping, tanning, and sewing. We combine storytelling with hands-on experience to keep traditions alive.</p>
+        <p class="mb-4 leading-relaxed">Join our hands-on workshops to learn the fundamentals—setting, tanning, stitching—and how to do it safely and responsibly. We combine stories from the frontier with practical technique.</p>
         <a href="#contact" class="inline-block bg-amber-700 text-white px-6 py-2 rounded hover:bg-amber-800">Learn More</a>
       </div>
     </div>
   </section>
 
-   <!-- Contact -->
+  <!-- Contact -->
   <section id="contact" class="bg-stone-100 py-16 px-6">
     <div class="max-w-3xl mx-auto text-center">
-      <img src="images/letter.png" alt="Letter Illustration" class="mx-auto w-64 mb-6 rounded shadow">
+      <img src="images/letter.png" alt="Vintage letter, quill, and candle illustration" class="mx-auto w-64 mb-6 rounded-xl shadow-lg bg-white p-4" loading="lazy" decoding="async">
       <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-      <p class="mb-6">We’d love to hear from you. Whether it’s about our products, training, or story — drop us a note or connect with us online.</p>
-      
-      <!-- Email -->
-      <p class="font-semibold mb-4">📧 Email: <a href="mailto:hello@daddydaughtertrapping.fake" class="text-amber-700 hover:underline">hello@daddydaughtertrapping.fake</a></p>
-      
-      <!-- Facebook -->
-      <p class="font-semibold">📘 Facebook: 
-        <a href="https://facebook.com/DaddyDaughterTrapping" target="_blank" class="text-amber-700 hover:underline">
-          @DaddyDaughterTrapping
-        </a>
+      <p class="mb-6">Questions about products or training? Drop us a note or connect with us on Facebook.</p>
+      <p class="font-semibold mb-4">📧 Email:
+        <a href="mailto:hello@daddydaughtertrapping.fake" class="text-amber-700 hover:underline">hello@daddydaughtertrapping.fake</a>
+      </p>
+      <p class="font-semibold">📘 Facebook:
+        <a href="https://facebook.com/DaddyDaughterTrapping" target="_blank" class="text-amber-700 hover:underline">@DaddyDaughterTrapping</a>
       </p>
     </div>
   </section>
 
-
   <!-- Footer -->
-  <footer class="bg-stone-800 text-stone-200 text-center py-6 mt-12">
-    <p>&copy; 2025 Daddy Daughter Trapping</p>
-    <p class="mt-2">Follow us on 
-      <a href="https://facebook.com/DaddyDaughterTrapping" target="_blank" class="text-amber-400 hover:underline">Facebook</a>
-    </p>
+  <footer class="bg-stone-800 text-stone-200 text-center py-8 mt-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <p>&copy; 2025 Daddy Daughter Trapping</p>
+      <p class="mt-2">Follow us on
+        <a href="https://facebook.com/DaddyDaughterTrapping" target="_blank" class="text-amber-400 hover:underline">Facebook</a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
