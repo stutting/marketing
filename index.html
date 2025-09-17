@@ -9,6 +9,22 @@
     html { scroll-behavior: smooth; }
   </style>
 </head>
+  <script>
+  // Hide product cards (or any img container) if the image fails to load
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("img").forEach(img => {
+      img.addEventListener("error", () => {
+        // If inside a <figure>, hide the whole figure
+        if (img.closest("figure")) {
+          img.closest("figure").style.display = "none";
+        } else {
+          // Otherwise just hide the image itself
+          img.style.display = "none";
+        }
+      });
+    });
+  });
+</script>
 <body class="bg-stone-50 text-stone-800 font-serif">
   <!-- Header / Hero -->
   <header class="relative">
